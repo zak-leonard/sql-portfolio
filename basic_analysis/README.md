@@ -8,7 +8,7 @@ The goal is to demonstrate proficiency with basic SQL commands such as `SELECT`,
 ## Queries
 
 ### 1. Top 10 Most Rented Movies
-**Business Question:** Which movies are rented the most?  
+**Business Question:** Which 10 movies are rented the most?  
 **SQL Query:**
 ```sql
 SELECT f.title, COUNT(r.rental_id) AS num_of_rentals
