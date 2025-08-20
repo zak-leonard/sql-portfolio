@@ -9,6 +9,7 @@ The goal is to demonstrate proficiency with basic SQL commands such as `SELECT`,
 
 ### 1. Top 10 Most Rented Movies
 **Business Question:** Which 10 movies are rented the most?  
+
 **SQL Query:**
 ```sql
 SELECT f.title, COUNT(r.rental_id) AS num_of_rentals
@@ -22,6 +23,7 @@ LIMIT 10;
 
 ### 2. Top 10 countries with the most customers
 **Business Question:** What are the top 20 countries that have the most active customers?  
+
 **SQL Query:**
 ```sql
 SELECT cl.country, COUNT(c.customer_id) AS CountryCount
@@ -36,6 +38,7 @@ LIMIT 10;
 
 ### 3. Customers with most transactions
 **Business Question:** Who are the customers that have rented from us over 25 times?
+
 **SQL Query:**
 ```sql
 SELECT p.customer_id, c.first_name, c.last_name, COUNT(p.customer_id) AS num_of_transactions, SUM(amount) AS total_spend
@@ -48,6 +51,7 @@ ORDER BY SUM(amount) DESC;
 
 ### 4. Most Popular Movie Categories
 **Business Question:** What movie categories are the most popular and how many times have they been rented?
+
 **SQL Query:**
 ```sql
 SELECT f.category, COUNT(r.rental_id)
