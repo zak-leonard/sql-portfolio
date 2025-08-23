@@ -42,11 +42,16 @@ ORDER BY SUM(f.price) DESC
 **Business Question:** What customers are high renters vs. medium renters vs. low renters?
 
 **Approach:**
-- coming soon
+- Select customer and name and counted their total number of rentals
+- Case statement to determine if they are a high, medium, or low renter based on their total number of rentals
+- Joined the customer_list table based on customer_id
+- Filtered out inactive customers
+- Ordered by the number of rentals in descending order
 
 **Results:**
-
-- coming soon
+- Majority of customers are deemed medium renters
+- Very few people above 35 rentals
+- None of the low renters have rented less than 10 times
 
 **SQL Query:**
 ```sql
